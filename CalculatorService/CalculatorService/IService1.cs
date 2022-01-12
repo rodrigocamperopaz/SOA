@@ -2,7 +2,7 @@
 
 namespace CalculatorService
 {
-    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
+    [ServiceContract(Namespace = "http://SomeInteresting.And.Meaningful.URL")]
     public interface ICalculator
     {
         [OperationContract]

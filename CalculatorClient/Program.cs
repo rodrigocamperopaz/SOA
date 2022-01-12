@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using CalculatorClient.ServiceReference1;
 
 namespace CalculatorClient
 {
     class Program
     {
+        /// <summary>
+        /// To generate a proxy
+        /// svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/SOA/CalculatorService
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             //Step 1: Create an instance of the WCF proxy.

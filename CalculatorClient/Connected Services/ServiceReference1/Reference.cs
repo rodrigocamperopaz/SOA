@@ -12,31 +12,31 @@ namespace CalculatorClient.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples", ConfigurationName="ServiceReference1.ICalculator")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://SomeInteresting.And.Meaningful.URL", ConfigurationName="ServiceReference1.ICalculator")]
     public interface ICalculator {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Add", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Add", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/AddResponse")]
         double Add(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Add", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Add", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/AddResponse")]
         System.Threading.Tasks.Task<double> AddAsync(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Subtract", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/SubtractResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Subtract", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/SubtractResponse")]
         double Subtract(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Subtract", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/SubtractResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Subtract", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/SubtractResponse")]
         System.Threading.Tasks.Task<double> SubtractAsync(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Multiply", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/MultiplyResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Multiply", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/MultiplyResponse")]
         double Multiply(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Multiply", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/MultiplyResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Multiply", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/MultiplyResponse")]
         System.Threading.Tasks.Task<double> MultiplyAsync(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Divide", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/DivideResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Divide", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/DivideResponse")]
         double Divide(double n1, double n2);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://Microsoft.ServiceModel.Samples/ICalculator/Divide", ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/DivideResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Divide", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/DivideResponse")]
         System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2);
     }
     
