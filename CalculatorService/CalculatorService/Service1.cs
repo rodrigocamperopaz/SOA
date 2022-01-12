@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace CalculatorService
 {
@@ -33,6 +34,14 @@ namespace CalculatorService
         {
             double result = n1 / n2;
             Console.WriteLine("Received Divide({0},{1})", n1, n2);
+            Console.WriteLine("Return: {0}", result);
+            return result;
+        }
+
+        public double Power(double n1, double n2)
+        {
+            double result = Math.Pow(n1, n2);
+            Console.WriteLine("Received Power({0},{1})", n1, n2);
             Console.WriteLine("Return: {0}", result);
             return result;
         }

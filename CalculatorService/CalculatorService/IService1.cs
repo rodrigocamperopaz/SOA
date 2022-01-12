@@ -13,5 +13,7 @@ namespace CalculatorService
         double Multiply(double n1, double n2);
         [OperationContract]
         double Divide(double n1, double n2);
+        [OperationContract]
+        double Power(double n1, double n2);
     }
 }
