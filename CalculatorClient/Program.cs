@@ -39,6 +39,12 @@ namespace CalculatorClient
             result = client.Divide(value1, value2);
             Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
 
+            // Call the Divide service operation.
+            value1 = 188.00D;
+            value2 = 7.00D;
+            result = client.Log(value1, value2);
+            Console.WriteLine("Log({0},{1}) = {2}", value1, value2, result);
+
             // Step 3: Close the client to gracefully close the connection and clean up resources.
             Console.WriteLine("\nPress <Enter> to terminate the client.");
             Console.ReadLine();

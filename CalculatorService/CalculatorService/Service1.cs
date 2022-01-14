@@ -36,5 +36,13 @@ namespace CalculatorService
             Console.WriteLine("Return: {0}", result);
             return result;
         }
+
+        public double Log(double n1, double n2)
+        {
+            double result = Math.Log(n1, n2);
+            Console.WriteLine("Received Log({0},{1})", n1, n2);
+            Console.WriteLine("Return: {0}", result);
+            return result;
+        }
     }
 }

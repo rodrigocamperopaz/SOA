@@ -38,6 +38,12 @@ namespace CalculatorClient.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://SomeInteresting.And.Meaningful.URL/ICalculator/Divide", ReplyAction="http://SomeInteresting.And.Meaningful.URL/ICalculator/DivideResponse")]
         System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://SomeInteresting.And.Meaningful.URL/ICalculator/Log", ReplyAction = "http://SomeInteresting.And.Meaningful.URL/ICalculator/LogResponse")]
+        double Log(double n1, double n2);
+
+        [System.ServiceModel.OperationContractAttribute(Action = "http://SomeInteresting.And.Meaningful.URL/ICalculator/Log", ReplyAction = "http://SomeInteresting.And.Meaningful.URL/ICalculator/LogResponse")]
+        System.Threading.Tasks.Task<double> LogAsync(double n1, double n2);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -97,6 +103,16 @@ namespace CalculatorClient.ServiceReference1 {
         
         public System.Threading.Tasks.Task<double> DivideAsync(double n1, double n2) {
             return base.Channel.DivideAsync(n1, n2);
+        }
+
+        public double Log(double n1, double n2)
+        {
+            return base.Channel.Log(n1, n2);
+        }
+
+        public System.Threading.Tasks.Task<double> LogAsync(double n1, double n2)
+        {
+            return base.Channel.LogAsync(n1, n2);
         }
     }
 }
